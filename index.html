@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>مجموعة الناصر الدولية</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,18 +18,63 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <h1 id="homeLink">مجموعة الناصر الدولية</h1>
-      </div>
-      <nav class="nav-menu">
-        <div id="menu"></div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#الرئيسية">
+            <h1 id="homeLink">مجموعة الناصر الدولية</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#المحاماة"
+                  >المحاماة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#رؤيتنا"
+                  >رؤيتنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#ممارساتنا"
+                  >ممارساتنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#قيمنا"
+                  >قيمنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#سياستنا"
+                  >سياستنا</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <section id="الرئيسية" data-nav="الرئيسية" class="home">
       <div class="container">
         <div class="landing-text">
-          <img src="./img/landing.jpg" alt="مجموعة الناصر الدولية" />
+          <img
+            src="./img/landing.jpg"
+            alt="مجموعة الناصر الدولية"
+            class="w-100"
+          />
           <p>
             <b
               >نبني لمستنا في الخدمة باحترافـية محمولة بالشغـف المهـني؛<br />
@@ -40,7 +89,7 @@
     <section id="المحاماة" data-nav="المحاماة">
       <div class="skills">
         <div class="container">
-          <h2 class="title">قالوا عن المحاماة</h2>
+          <h2 class="h1 title">قالوا عن المحاماة</h2>
           <p>
             المحاماة هي مهنة مستقلة حرة، تشارك السلطة القضائية في تحقيق العدالة،
             وتساهم بتحقيق الوقاية والحماية القانونية فيما نقوم به في حياتنا
@@ -101,7 +150,7 @@
     <section id="رؤيتنا" data-nav="رؤيتنا">
       <div class="testimonial">
         <div class="container">
-          <h2 class="title">
+          <h2 class="h1 title">
             اكتسبنا خبرة علمية وعملية متميزة، وحصلنا الخبرات العظيمة أثناء
             ممارسة المهنة وتأسست مجموعتنا وفق رؤيتنا
           </h2>
@@ -134,7 +183,7 @@
               </p>
             </li>
           </ul>
-          <h2 class="title">من نحن</h2>
+          <h2 class="h1 title">من نحن</h2>
           <ul>
             <li>
               <h2>1. هاني إبراهيم جنيدي:</h2>
@@ -168,7 +217,7 @@
     <!-- Start Work Section -->
     <section id="ممارساتنا" data-nav="ممارساتنا">
       <div class="container">
-        <h2 class="title">ممارساتنا القانونية</h2>
+        <h2 class="h1 title">ممارساتنا القانونية</h2>
         <ul>
           <li>
             <h2>1. الإدارة القانونية:</h2>
@@ -431,77 +480,6 @@
             </ul>
           </li>
         </ul>
-        <!-- <ul>
-          <li>
-            <h2>1. الإدارة القانونية:</h2>
-            <p>
-              تعد من أهم الإدارات في الجهات الخاصة والحكومية، لما لها من دور
-              بارز في القيام بالدور الرقابي والوقائي القانوني ومراقبة الالتزام
-              بالتشريعات واللوائح الصادرة والمتغيرة في المنشأة،فنقدم لعملائنا من
-              الشركات العامة والخاصة خدماتنا المتكاملة الشاملة مع إمكانية
-              الاتفاق عليها وتصميمها بعقود سنوية، وهي:
-            </p>
-            <ul>
-              <li>أ- صياغة العقود والاتفاقات والخطابات ومراجعتها.</li>
-              <li>
-                ب- التمثيل القانوني في الاجتماعات والجهات القضائية والتحكيمية.
-              </li>
-              <li>
-                ت- إدارة القضايا ووضع استراتيجية لها، واستلام التبليغات القضائية
-                للقضايا ضد الشركة.
-              </li>
-              <li>ث- الاستشارات والدراسات القانونية لأعمال المنشأة.</li>
-              <li>ج- إدارة وتحصيل المطالبات المالية.</li>
-              <li>ح- إدارة الالتزام بالأنظمة ومراجعتها.</li>
-              <li>خ- التحقيق العمالي.</li>
-              <li>
-                د- جميع ما تتطلبه الإدارة القانونية ونقوم بتنفيذها بعقد سنوي.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h2>2. التجارة الإلكترونية:</h2>
-            <p>
-              التكنولوجيا الرقمية هي المستقبل الواعد التي شهدناها في جميع
-              المجالات حيث تسارع القطاع العام والخاص لمواكبتها وممارسة الأعمال
-              من خلالها، وبرز دور التجار فيها لسهولة الوصول لشريحة كبيرة من
-              المستهلكين بأقل التكاليف التشغيلية، لذلك نقدم لعملائنا وشركاء
-              نجاحنا استشارات قانونية لآلية دخول السوق وصحة الممارسة وفق الأنظمة
-              السعودية وصياغة عقد الإطار الموحد ( سياسية الخصوصية - عقد الإطار (
-              شروط الاحكام) - صحة التواقيع - ...الخ )، وكذلك التعريف بحقوق
-              المستهلك وكيفية حصوله عليها...الخ ).
-            </p>
-          </li>
-          <li>
-            <h2>3. الشركات وريادة الأعمال:</h2>
-            <p>
-              عند تأسيس المؤسسة والشركة يتطلب اللجوء للقانون والمستشار، للتحقق
-              من السلامة القانونية بل وفي دراسات الجدوى يتم أخذ الاستشارات
-              القانونية عن سلامة المشروع، ومن هذا المنطلق في الاستشارات
-              والدراسات وسلامة تأسيس واستمرار وتوسع العمل من الناحية القانونية،
-              نقدم لعملائنا من رجال وسيدات الأعمال والمنشآت ما يلي:
-            </p>
-            <ul>
-              <li>
-                أ- اختيار الإطار الأمثل للمشروع: مؤسسة، أو شركة وفق نظام الشركات
-                التجارية أو المهنية واستكمال إجراءات التأسيس.
-              </li>
-              <li>
-                ب- تحول الشركات وصفقات الاندماج والاستحواذ وإعادة الهيكلة.
-              </li>
-              <li>ت- الإشراف على تطور وتوسيع الأعمال قانونا.</li>
-              <li>ث- الاكتتاب العام.</li>
-              <li>ج- قرارات الشركاء.</li>
-              <li>ح- الامتياز التجاري.</li>
-              <li>خ- الوكلات التجارية.</li>
-              <li>د- الإفلاس.</li>
-              <li>ذ- الحراسة القضائية.</li>
-              <!-- <li>ر- تصفية الشركات.</li>
-              <li>ز- الفحص النافي للجهالة.</li>
-              <li>س- جميع مايتطلبه الكيان التجاري.</li> -->
-            </ul>
-          </li>
-        </ul> -->
       </div>
     </section>
     <!-- End Work Section -->
@@ -509,7 +487,7 @@
     <!-- Start Our Values Section -->
     <section id="قيمنا" data-nav="قيمنا">
       <div class="container">
-        <h2 class="title">قيمنا</h2>
+        <h2 class="h1 title">قيمنا</h2>
         <ul>
           <li>1. العمل على تحقيق العدالة.</li>
           <li>2. التطور المستمر المتكامل.</li>
@@ -524,7 +502,7 @@
     <section id="سياستنا" data-nav="سياستنا">
       <div class="policy">
         <div class="container">
-          <h2 class="title">ساسية الأتعاب</h2>
+          <h2 class="h1 title">ساسية الأتعاب</h2>
           <p>
             العمل على تحقيق العدالة التطور المستمر المتكامل المساهمة بارتقاء
             المهنة العناية بالعميل السرية والخصوصية لدينا طرق مرنه تتوافق مع
@@ -547,7 +525,8 @@
         </div>
       </div>
     </section>
-    <button>العودة للأعلى</button>
-    <script src="./js/app.js"></script>
+    <button class="up">العودة للأعلى</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
